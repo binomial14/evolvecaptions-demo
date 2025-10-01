@@ -6,13 +6,12 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="SoundNarratives: Rich Auditory Scene Descriptions to Support Deaf and Hard of Hearing People - Liang-Yuan Wu and Dhruv Jain">
+  <meta name="title" content="EvolveCaptions: Real-Time Collaborative ASR Adaptation for DHH Speakers - Liang-Yuan Wu and Dhruv Jain">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="Accessibility, human-AI interaction, sound awareness, deaf and
-hard of hearing, generative AI, prompt engineering, auditory scene
-analysis">
+  <meta name="keywords" content="Accessibility, human-AI interaction, deaf and
+hard of hearing">
   <!-- TODO: List all authors -->
   <meta name="author" content="Liang-Yuan Wu, Dhruv Jain">
   <meta name="robots" content="index, follow">
@@ -23,7 +22,7 @@ analysis">
   <!-- TODO: Replace with your institution or lab name -->
   <meta property="og:site_name" content="Soundability Lab">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="SoundNarratives: Rich Auditory Scene Descriptions to Support Deaf and Hard of Hearing People">
+  <meta property="og:title" content="EvolveCaptions: Real-Time Collaborative ASR Adaptation for DHH Speakers">
   <!-- TODO: Same as description above -->
   <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Replace with your actual website URL -->
@@ -79,8 +78,8 @@ analysis">
   <title>SoundNarratives: Rich Auditory Scene Descriptions to Support Deaf and Hard of Hearing People - Liang-Yuan Wu and Dhruv Jain</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/soundnarratives.ico">
-  <link rel="apple-touch-icon" href="static/images/soundnarratives.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
+  <link rel="apple-touch-icon" href="static/images/favicon.png">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -238,7 +237,7 @@ analysis">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">SoundNarratives: Rich Auditory Scene Descriptions to Support Deaf and Hard of Hearing People</h1>
+            <h1 class="title is-1 publication-title">EvolveCaptions: Real-Time Collaborative ASR Adaptation for DHH Speakers</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
@@ -318,9 +317,11 @@ analysis">
         <!-- <source src="static/videos/banner_video.mp4" type="video/mp4"> -->
       <!-- </video> -->
       <!-- TODO: Replace with your video description -->
-      <img src="static/images/SoundNarratives_decorative_figure.png" alt="Teaser figure" loading="lazy"/>
+      <img src="static/images/evolve-captions.png" alt="Teaser figure" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        SoundNarratives delivers semantically rich auditory scene descriptions to enhance sound awareness for deaf and hard of hearing individuals. Unlike existing approaches that only provide sound event labels (dotted-line box), our system offers more detailed descriptions across multiple sound parameters (solid-line box), enabling users to better engage with their surroundings.
+        Overview of EvolveCaptions. (1) Hearing users correct live captions of the DHH speaker’s voice. (2) The DHH speaker
+records targeted phrases generated from the corrected terms. (3) The Whisper ASR model is fine-tuned with the recordings and
+adapts to the speaker over time.
       </h2>
     </div>
   </div>
@@ -336,7 +337,7 @@ analysis">
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Sound recognition enhances safety, social interaction, and situational awareness for deaf and hard of hearing (DHH) individuals. However, existing sound recognition technologies primarily classify sounds into predefined categories (e.g., door opening, speech), which fail to capture the full complexity of real-world auditory scenes (e.g., temporal variations, sound transitions, overlapping sound layers). In this work, we introduce SoundNarratives, a real-time system that generates rich, contextual auditory scene descriptions tailored to DHH users. We began with conducting a formative study with 10 DHH participants to identify nine key auditory scene parameters (e.g., sound class, loudness, emotion, semantic description), and used these insights to guide prompt engineering with a state-of-the-art audio language model. A user study with 10 DHH participants demonstrated a significant preference for SoundNarratives over a baseline model, along with a potential for improved confidence and situational awareness.
+            Current ASR systems struggle to reliably recognize the speech of Deaf and Hard of Hearing (DHH) individuals, particularly in real-time communication. Existing personalization methods typically require extensive pre-recorded data and place the burden entirely on DHH users. We present EvolveCaptions, a live ASR adaptation system that supports collaborative, in-the-moment personalization. Hearing participants correct ASR errors during conversation, and the system generates short, phonetically relevant phrases for the DHH speaker to record. These recordings are then used to iteratively fine-tune the ASR model. In a preliminary evaluation, our system reduced word error rate from 0.53 to 0.27 over four adaptation rounds with minimal user effort. This work introduces a low-effort, socially collaborative method for adapting ASR to diverse DHH voices in real-world settings.
           </p>
         </div>
       </div>
@@ -385,23 +386,23 @@ analysis">
 
 
 <!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
+<section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container"> -->
+    <div class="container">
       <!-- Paper video. -->
-      <!-- <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
-          <div class="publication-video"> -->
+          <div class="publication-video">
             <!-- TODO: Replace with your YouTube video ID -->
-            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/IuOU45TNxAE?si=LNGhAmeOHaKVrl_P" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section> -->
+</section>
 <!-- End youtube video -->
 
 
